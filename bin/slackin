@@ -19,8 +19,8 @@ program
 if (program.args.length != 2) {
   program.help();
 } else {
-  program.org = program.args[0];
-  program.token = program.args[1];
+  program.org = process.env.SLACK_SUBDOMAIN;
+  program.token = process.env.SLACK_API_TOKEN;
 }
 
 // support deprecated option

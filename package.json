@@ -30,6 +30,6 @@
   "scripts": {
     "test": "mocha",
     "postinstall": "make",
-    "start": "node bin/slackin $SLACK_SUBDOMAIN $SLACK_API_TOKEN"
+    "start": "node ./bin/slackin"
   }
 }
